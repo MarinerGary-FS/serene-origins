@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
+import Image from 'next/image'
 import { STRIPE_URL, BRAND_NAME } from '@/lib/constants'
 
 export function SiteHeader() {
@@ -27,16 +27,15 @@ export function SiteHeader() {
           <div className="flex items-center justify-between h-16 md:h-[4.25rem]">
 
             {/* Wordmark */}
-            <a href="#" className="flex items-center gap-2.5 no-underline">
-              <span className="text-[0.6rem] font-semibold tracking-[0.22em] uppercase text-sage/70 hidden sm:block">
-                ✦
-              </span>
-              <span
-                style={{ fontFamily: 'var(--font-display)' }}
-                className="text-[1.15rem] tracking-[0.06em] font-light text-cream"
-              >
-                {BRAND_NAME}
-              </span>
+            <a href="#" className="flex items-center no-underline">
+              <Image
+                src="/logo.svg"
+                alt={BRAND_NAME}
+                width={160}
+                height={36}
+                priority
+                className="h-8 w-auto"
+              />
             </a>
 
             {/* Desktop nav */}

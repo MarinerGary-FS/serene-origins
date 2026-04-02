@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Reveal } from '@/components/ui/reveal'
 
 const channels = [
@@ -86,140 +87,64 @@ export function ExperiencePreviewSection() {
               </div>
             </div>
 
-            <div className="flex min-h-[340px]">
-              {/* Sidebar */}
-              <div
-                className="w-[190px] flex-shrink-0 border-r hidden sm:flex flex-col"
-                style={{
-                  borderColor: 'rgba(255,255,255,0.06)',
-                  background: 'rgba(0,0,0,0.2)',
-                }}
-              >
-                <div
-                  className="px-4 py-3 border-b"
-                  style={{ borderColor: 'rgba(255,255,255,0.06)' }}
-                >
-                  <span
-                    className="text-[0.68rem] font-semibold tracking-[0.14em] uppercase"
-                    style={{ color: 'var(--muted)', fontFamily: 'var(--font-sans)' }}
-                  >
-                    Spaces
-                  </span>
+            {/* Screenshot grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 relative">
+              {/* Main community overview — full width on mobile, left column on desktop */}
+              <div className="relative sm:row-span-2 border-b sm:border-b-0 sm:border-r" style={{ borderColor: 'rgba(255,255,255,0.07)' }}>
+                <div className="blurred-content">
+                  <Image
+                    src="/preview/community-overview.png"
+                    alt="Serene Origins community overview"
+                    width={520}
+                    height={420}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
-                <nav className="flex flex-col py-2 flex-1">
-                  {channels.map((ch, i) => (
-                    <div
-                      key={ch.label}
-                      className={`flex items-center justify-between px-3 py-[7px] mx-2 rounded-[4px] ${
-                        i === 0 ? 'bg-white/[0.07]' : 'hover:bg-white/[0.04]'
-                      } transition-colors cursor-default`}
-                    >
-                      <div className="flex items-center gap-2.5">
-                        <span
-                          className="text-[0.7rem]"
-                          style={{ color: i === 0 ? 'var(--sage)' : 'var(--muted)' }}
-                        >
-                          {ch.icon}
-                        </span>
-                        <span
-                          className="text-[0.78rem]"
-                          style={{
-                            color: i === 0 ? 'var(--cream)' : 'var(--cream-dim)',
-                            fontFamily: 'var(--font-sans)',
-                          }}
-                        >
-                          {ch.label}
-                        </span>
-                      </div>
-                      {ch.badge && (
-                        <span
-                          className="text-[0.6rem] px-1.5 rounded-sm"
-                          style={{
-                            background: 'rgba(138,160,137,0.2)',
-                            color: 'var(--sage)',
-                          }}
-                        >
-                          {ch.badge}
-                        </span>
-                      )}
-                    </div>
-                  ))}
-                </nav>
               </div>
 
-              {/* Main content */}
-              <div className="flex-1 p-5 flex flex-col gap-4 relative">
-                <div
-                  className="text-[0.72rem] font-medium tracking-wide mb-1"
-                  style={{ color: 'var(--muted)', fontFamily: 'var(--font-sans)' }}
-                >
-                  Recent Discussions
+              {/* Discussion example */}
+              <div className="relative border-b" style={{ borderColor: 'rgba(255,255,255,0.07)' }}>
+                <div className="blurred-content">
+                  <Image
+                    src="/preview/discussion-example.png"
+                    alt="Member discussion example"
+                    width={520}
+                    height={210}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
+              </div>
 
-                {/* Preview posts */}
-                {previewPosts.map((post, i) => (
-                  <div
-                    key={i}
-                    className="border rounded-[6px] p-4"
-                    style={{ borderColor: 'rgba(255,255,255,0.07)', background: 'var(--bg-elevated)' }}
+              {/* Onboarding screen */}
+              <div className="relative">
+                <div className="blurred-content">
+                  <Image
+                    src="/preview/onboarding-screen.png"
+                    alt="Onboarding experience"
+                    width={520}
+                    height={210}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              </div>
+
+              {/* Privacy overlay */}
+              <div
+                className="absolute inset-0 flex items-end justify-center pb-8 pointer-events-none"
+                style={{
+                  background: 'linear-gradient(to bottom, transparent 0%, rgba(23,21,18,0.85) 55%, rgba(23,21,18,0.97) 100%)',
+                }}
+              >
+                <div className="text-center px-6 pointer-events-auto">
+                  <span
+                    className="text-[0.68rem] tracking-[0.2em] uppercase font-medium block mb-2"
+                    style={{ color: 'var(--sage)' }}
                   >
-                    <div className="flex items-center justify-between mb-2">
-                      <span
-                        className="text-[0.66rem] px-2 py-0.5 rounded-sm font-medium tracking-wide uppercase"
-                        style={{
-                          background: 'rgba(255,255,255,0.06)',
-                          color: 'var(--muted)',
-                          fontFamily: 'var(--font-sans)',
-                        }}
-                      >
-                        {post.category}
-                      </span>
-                      <span className="text-[0.72rem]" style={{ color: 'var(--muted)' }}>{post.time}</span>
-                    </div>
-
-                    {/* Blurred content */}
-                    <div className="blurred-content">
-                      <p
-                        className="text-[0.88rem] mb-2"
-                        style={{ color: 'var(--cream)', fontFamily: 'var(--font-sans)' }}
-                      >
-                        {post.title}
-                      </p>
-                      <div className="h-2 rounded bg-white/10 w-3/4 mb-1.5" />
-                      <div className="h-2 rounded bg-white/10 w-1/2" />
-                    </div>
-
-                    <div
-                      className="flex items-center gap-3 mt-3 pt-3 border-t text-[0.76rem]"
-                      style={{ borderColor: 'rgba(255,255,255,0.06)', color: 'var(--muted)' }}
-                    >
-                      <span>↩ {post.replies} replies</span>
-                      <span>· Members only</span>
-                    </div>
-                  </div>
-                ))}
-
-                {/* Privacy overlay */}
-                <div
-                  className="absolute inset-0 flex items-end justify-center pb-6"
-                  style={{
-                    background: 'linear-gradient(to bottom, transparent 0%, rgba(23,21,18,0.92) 65%, rgba(23,21,18,0.98) 100%)',
-                  }}
-                >
-                  <div className="text-center px-6">
-                    <span
-                      className="text-[0.68rem] tracking-[0.2em] uppercase font-medium block mb-2"
-                      style={{ color: 'var(--sage)' }}
-                    >
-                      Private member content
-                    </span>
-                    <p
-                      className="text-[0.88rem]"
-                      style={{ color: 'var(--cream-dim)' }}
-                    >
-                      Full access unlocks when you join.
-                    </p>
-                  </div>
+                    Private member content
+                  </span>
+                  <p className="text-[0.88rem]" style={{ color: 'var(--cream-dim)' }}>
+                    Full access unlocks when you join.
+                  </p>
                 </div>
               </div>
             </div>
