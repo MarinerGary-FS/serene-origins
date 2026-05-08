@@ -31,10 +31,10 @@ export function SiteHeader() {
               <Image
                 src="/logo.svg"
                 alt={BRAND_NAME}
-                width={160}
-                height={36}
+                width={220}
+                height={50}
                 priority
-                className="h-8 w-auto"
+                className="h-10 w-auto md:h-12"
               />
             </a>
 
