@@ -67,7 +67,7 @@ Each card should explain what that pillar gives the user.
 **Purpose:** Remove friction and uncertainty
 
 **Suggested step flow:**
-1. Join through Stripe
+1. Join through LaunchPass
 2. Receive onboarding / access instructions
 3. Enter the private member space
 4. Begin with a clear next step
@@ -102,7 +102,7 @@ Each card should explain what that pillar gives the user.
 - one featured membership card
 - $29/month
 - short feature stack
-- Stripe CTA
+- LaunchPass CTA
 - “cancel anytime” if accurate
 
 ---
@@ -115,7 +115,7 @@ Each card should explain what that pillar gives the user.
 - What do I get after joining?
 - Is the community private?
 - Is this for people newly diagnosed or long-term?
-- How is payment handled?
+- How are checkout and Discord access handled?
 
 ---
 
@@ -130,4 +130,4 @@ Each card should explain what that pillar gives the user.
 - Privacy Policy
 - Terms
 - Contact / Support
-- Stripe security reassurance if appropriate
+- LaunchPass Discord access reassurance if appropriate

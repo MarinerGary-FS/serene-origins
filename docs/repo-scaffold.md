@@ -96,4 +96,4 @@ If using plain CSS:
 - richer motion
 - analytics
 - onboarding email integrations
-- webhook-driven Stripe flow
+- LaunchPass-managed Discord access flow

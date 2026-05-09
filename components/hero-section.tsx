@@ -1,4 +1,4 @@
-import { STRIPE_URL } from '@/lib/constants'
+import { LaunchPassCTA } from '@/components/launchpass-cta'
 
 export function HeroSection() {
   return (
@@ -47,14 +47,11 @@ export function HeroSection() {
 
         {/* CTAs */}
         <div className="reveal is-visible mt-10 flex flex-col sm:flex-row items-center justify-center gap-4" style={{ animationDelay: '0.3s' }}>
-          <a
-            href={STRIPE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary text-[0.93rem] py-[0.9rem] px-8"
+          <LaunchPassCTA
+            className="btn-primary w-full sm:w-auto text-[0.86rem] sm:text-[0.93rem] py-[0.9rem] px-6 sm:px-8"
           >
-            Start Membership — $29/month
-          </a>
+            Begin The Discipline Transformation System
+          </LaunchPassCTA>
           <a
             href="#how-it-works"
             className="btn-ghost text-[0.88rem]"
@@ -67,7 +64,7 @@ export function HeroSection() {
         <div className="reveal is-visible mt-10" style={{ animationDelay: '0.4s' }}>
           <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-2">
             {[
-              'Secure Stripe checkout',
+              'LaunchPass-managed Discord access',
               'Private member space',
               'Cancel anytime',
             ].map((item) => (

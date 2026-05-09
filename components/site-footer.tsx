@@ -1,4 +1,5 @@
-import { BRAND_NAME, STRIPE_URL } from '@/lib/constants'
+import { LaunchPassCTA } from '@/components/launchpass-cta'
+import { BRAND_NAME } from '@/lib/constants'
 
 export function SiteFooter() {
   const year = new Date().getFullYear()
@@ -84,15 +85,12 @@ export function SiteFooter() {
               >
                 Join
               </span>
-              <a
-                href={STRIPE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <LaunchPassCTA
                 className="btn-ghost text-[0.82rem] py-2 px-4 w-fit"
               >
                 Start Membership
-              </a>
-              <span className="text-[0.72rem]" style={{ color: 'var(--muted)' }}>$29/month · Cancel anytime</span>
+              </LaunchPassCTA>
+              <span className="text-[0.72rem]" style={{ color: 'var(--muted)' }}>$29/month · Discord access through LaunchPass</span>
             </div>
           </div>
 
@@ -104,7 +102,7 @@ export function SiteFooter() {
           style={{ borderColor: 'rgba(255,255,255,0.05)', color: 'var(--muted)' }}
         >
           <span>© {year} {BRAND_NAME}. All rights reserved.</span>
-          <span>Payments secured by Stripe.</span>
+          <span>Discord access managed by LaunchPass.</span>
         </div>
 
       </div>

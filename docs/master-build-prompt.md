@@ -29,9 +29,9 @@ You must use these documents as the source of truth.
 Create a **high-impact landing page** for Serene Origins that is strong enough to present to Levy for review and clean enough to become the production foundation with minimal rework.
 
 ## Primary conversion action
-All membership CTAs must link to:
+All membership CTAs must use the LaunchPass checkout embed:
 
-`https://buy.stripe.com/aFa7sLbbm8UDfamgUN0gw00`
+Button class: `lp4825787519074304`
 
 ## What you are building
 Build a single premium landing page experience that includes:
@@ -148,7 +148,7 @@ This section should still feel premium and believable.
 The pricing section must make the offer feel simple and confident:
 - $29/month
 - clear value stack
-- clean CTA to Stripe
+- clean CTA to LaunchPass
 - optional short reassurance if accurate, such as cancellation flexibility
 
 ## Stakeholder review requirement

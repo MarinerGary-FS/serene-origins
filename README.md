@@ -15,4 +15,4 @@ This folder contains the planning documents needed to guide Claude through a pre
 10. Validate against `review-checklist.md`
 
 ## Suggested outcome
-A polished, mobile-first landing page with strong conversion flow, direct Stripe CTA integration, and a clear visual identity that feels premium, private, calm, and credible.
+A polished, mobile-first landing page with strong conversion flow, LaunchPass checkout integration for Discord-gated access, and a clear visual identity that feels premium, private, calm, and credible.

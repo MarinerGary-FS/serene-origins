@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { STRIPE_URL, BRAND_NAME } from '@/lib/constants'
+import { LaunchPassCTA } from '@/components/launchpass-cta'
+import { BRAND_NAME } from '@/lib/constants'
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
@@ -58,14 +59,11 @@ export function SiteHeader() {
 
             {/* Desktop CTA */}
             <div className="hidden md:block">
-              <a
-                href={STRIPE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <LaunchPassCTA
                 className="btn-primary text-[0.82rem] py-[0.65rem] px-5"
               >
                 Join Now
-              </a>
+              </LaunchPassCTA>
             </div>
 
             {/* Mobile menu toggle */}
@@ -116,14 +114,12 @@ export function SiteHeader() {
             </a>
           ))}
         </nav>
-        <a
-          href={STRIPE_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+        <LaunchPassCTA
+          onClick={() => setMenuOpen(false)}
           className="btn-primary w-full text-center"
         >
-          Join Now — $29/month
-        </a>
+          Begin The Discipline Transformation System
+        </LaunchPassCTA>
       </div>
 
       {/* Overlay */}

@@ -1,5 +1,5 @@
 import { Reveal } from '@/components/ui/reveal'
-import { STRIPE_URL } from '@/lib/constants'
+import { LaunchPassCTA } from '@/components/launchpass-cta'
 
 const items = [
   {
@@ -48,16 +48,13 @@ export function IncludedSection() {
               </p>
 
               <div className="mt-9 flex flex-col gap-4">
-                <a
-                  href={STRIPE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary inline-flex w-fit"
+                <LaunchPassCTA
+                  className="btn-primary w-full sm:w-fit"
                 >
-                  Start Membership — $29/month
-                </a>
+                  Begin The Discipline Transformation System
+                </LaunchPassCTA>
                 <span className="text-[0.78rem]" style={{ color: 'var(--muted)' }}>
-                  Secure checkout · Cancel anytime
+                  LaunchPass checkout · Discord access included
                 </span>
               </div>
             </div>

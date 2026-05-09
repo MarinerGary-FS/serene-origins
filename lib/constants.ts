@@ -1,5 +1,3 @@
-export const STRIPE_URL = 'https://buy.stripe.com/aFa7sLbbm8UDfamgUN0gw00'
-
 export const BRAND_NAME = 'Serene Origins'
 
 export const SITE_TITLE = 'Serene Origins — Private, Structured Support'

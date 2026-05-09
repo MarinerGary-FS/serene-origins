@@ -15,11 +15,11 @@ The current site appears calm and well-intentioned, but it likely suffers from:
 The redesign should transform the experience from a gentle concept site into a clear conversion-oriented product experience.
 
 ## Primary user action
-Join the paid membership through Stripe.
+Join the paid membership through LaunchPass.
 
 ## Current payment path
-Stripe checkout:
-`https://buy.stripe.com/aFa7sLbbm8UDfamgUN0gw00`
+LaunchPass checkout embed:
+`https://www.launchpass.com/serene-origin/discipline-transformation-system/embed.js`
 
 ## Business objectives
 - communicate the offer quickly
@@ -60,5 +60,5 @@ The redesign will be successful if a first-time visitor can quickly answer:
 - polished landing page implementation
 - responsive layout
 - premium visual direction
-- direct Stripe CTA integration
+- LaunchPass CTA integration for paid Discord access
 - presentable preview ready for internal review

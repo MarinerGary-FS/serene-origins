@@ -27,17 +27,14 @@ Fallback:
 - `Footer`
 
 ## CTA behavior
-All major membership CTAs should link to:
+All major membership CTAs should use the LaunchPass checkout embed:
 
-`https://buy.stripe.com/aFa7sLbbm8UDfamgUN0gw00`
+Button class: `lp4825787519074304`
 
-Open behavior:
-- same tab is acceptable
-- new tab is acceptable if preferred for external checkout consistency
+Embed script: `https://www.launchpass.com/serene-origin/discipline-transformation-system/embed.js`
 
-## Stripe notes
-Keep checkout simple.
-Do not overcomplicate the purchase flow before review.
+## LaunchPass notes
+Keep checkout simple. LaunchPass manages paid Discord access, member verification, role assignment, and access removal when a membership ends.
 
 ## Technical standards
 - responsive across mobile, tablet, desktop

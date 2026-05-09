@@ -7,15 +7,17 @@ Reimagine the current site into a high-impact landing experience that:
 - feels modern, private, elevated, and emotionally intelligent
 - explains the offer clearly within seconds
 - reduces confusion and friction
-- drives the user to join the paid membership via Stripe
+- drives the user to join the paid membership through LaunchPass
 
 ## Primary business goal
 Increase qualified conversions into the monthly membership.
 
 ## Primary CTA
-Use this Stripe payment link for all membership CTAs:
+Use the LaunchPass checkout embed for all membership CTAs:
 
-`https://buy.stripe.com/aFa7sLbbm8UDfamgUN0gw00`
+Button class: `lp4825787519074304`
+
+Embed script: `https://www.launchpass.com/serene-origin/discipline-transformation-system/embed.js`
 
 ## Product framing
 Serene Origins is not just a community. It is a guided support and education experience for people living with herpes who want clarity, structure, and confidence without shame.

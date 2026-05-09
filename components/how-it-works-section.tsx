@@ -3,18 +3,18 @@ import { Reveal } from '@/components/ui/reveal'
 const steps = [
   {
     number: '1',
-    title: 'Join through secure checkout',
-    body: 'Complete your membership with a simple, private Stripe checkout. Your information is handled with full discretion.',
+    title: 'Join through LaunchPass checkout',
+    body: 'Complete your membership through LaunchPass. Access to the private Discord community is managed through LaunchPass.',
   },
   {
     number: '2',
     title: 'Receive your access details',
-    body: 'You\'ll be guided into the member experience with clear onboarding instructions — no confusion about where to go or what to do next.',
+    body: 'After checkout, members receive access instructions and Discord permissions based on their active membership status.',
   },
   {
     number: '3',
-    title: 'Enter the private community',
-    body: 'Step into a discreet, organized space built for support, education, and connection with people who actually understand.',
+    title: 'Connect to the private Discord',
+    body: 'Follow the LaunchPass steps to connect your Discord account and unlock the member-only community.',
   },
   {
     number: '4',

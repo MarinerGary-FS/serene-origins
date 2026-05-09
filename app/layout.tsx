@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
+import { LaunchPassScript } from '@/components/launchpass-script'
 import { SITE_TITLE, SITE_DESCRIPTION } from '@/lib/constants'
 
 const inter = Inter({
@@ -41,7 +42,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <LaunchPassScript />
+      </body>
     </html>
   )
 }

@@ -1,5 +1,5 @@
 import { Reveal } from '@/components/ui/reveal'
-import { STRIPE_URL } from '@/lib/constants'
+import { LaunchPassCTA } from '@/components/launchpass-cta'
 
 const features = [
   'Private member community',
@@ -102,20 +102,17 @@ export function PricingSection() {
               </div>
 
               {/* CTA */}
-              <a
-                href={STRIPE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <LaunchPassCTA
                 className="btn-primary w-full text-center block text-[0.95rem] py-[1rem]"
               >
-                Start Membership
-              </a>
+                Begin The Discipline Transformation System
+              </LaunchPassCTA>
 
               <p
                 className="text-center text-[0.76rem] mt-4"
                 style={{ color: 'var(--muted)' }}
               >
-                Secure checkout powered by Stripe
+                Discord access managed through LaunchPass
               </p>
             </div>
           </div>
@@ -127,7 +124,7 @@ export function PricingSection() {
             {[
               'Private and discreet checkout',
               'No long-term commitment',
-              'Access begins immediately after signup',
+              'LaunchPass manages Discord permissions',
             ].map((item) => (
               <span
                 key={item}

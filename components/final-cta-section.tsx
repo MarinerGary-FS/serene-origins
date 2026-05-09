@@ -1,5 +1,5 @@
 import { Reveal } from '@/components/ui/reveal'
-import { STRIPE_URL } from '@/lib/constants'
+import { LaunchPassCTA } from '@/components/launchpass-cta'
 
 export function FinalCTASection() {
   return (
@@ -43,16 +43,13 @@ export function FinalCTASection() {
 
             {/* CTA block */}
             <div className="flex flex-col items-center gap-4">
-              <a
-                href={STRIPE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary text-[0.95rem] py-[0.95rem] px-10"
+              <LaunchPassCTA
+                className="btn-primary w-full sm:w-auto text-[0.88rem] sm:text-[0.95rem] py-[0.95rem] px-6 sm:px-10"
               >
-                Join Serene Origins — $29/month
-              </a>
+                Begin The Discipline Transformation System
+              </LaunchPassCTA>
               <span className="text-[0.78rem]" style={{ color: 'var(--muted)' }}>
-                Private checkout · Cancel anytime · Begins immediately
+                LaunchPass checkout · Discord access included · Cancel anytime
               </span>
             </div>
 

@@ -83,8 +83,8 @@ What you receive as a member.
 What happens after you join.
 
 ### Step copy
-**1. Join securely through Stripe**  
-Complete your membership with a simple secure checkout.
+**1. Join securely through LaunchPass**
+Complete your membership with a simple LaunchPass checkout.
 
 **2. Receive your next-step access details**  
 You will be guided into the member experience with clear onboarding instructions.

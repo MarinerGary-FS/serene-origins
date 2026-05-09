@@ -28,7 +28,7 @@ Use this checklist before presenting the redesign.
 
 ## Technical
 - Are all CTA buttons working?
-- Does Stripe link correctly?
+- Does the LaunchPass checkout open correctly?
 - Are there any broken anchors or sections?
 - Is performance acceptable?
 - Are fonts, spacing, and components consistent?

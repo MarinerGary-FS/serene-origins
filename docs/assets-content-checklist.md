@@ -15,8 +15,8 @@
 - member journey details
 - confirmation of post-purchase flow
 
-### Stripe
-- confirm checkout link remains final
+### LaunchPass
+- confirm checkout embed remains final
 - confirm subscription terms
 - confirm cancellation language that is accurate
 
@@ -33,7 +33,7 @@
 ## Content questions to finalize later
 - Is there a founder face or is the brand intentionally faceless?
 - Will the community be framed primarily around Discord?
-- Is there a welcome email sequence after Stripe?
+- Is there a welcome email sequence after LaunchPass checkout?
 - Is there a member portal beyond Discord?
 - Should the CTA say “Join,” “Start Membership,” or “Get Access”?
 

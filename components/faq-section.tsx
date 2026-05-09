@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'What do I actually get after I join?',
     answer:
-      'After completing your secure Stripe checkout, you\'ll receive access instructions that walk you through entering the private member community. Inside, you\'ll find organized discussion spaces, educational content, and a clear starting point. You won\'t be dropped in with no direction — onboarding is part of the experience.',
+      'After checkout, you\'ll receive access instructions that walk you through entering the private member community. Inside, you\'ll find organized discussion spaces, educational content, and a clear starting point. You won\'t be dropped in with no direction — onboarding is part of the experience.',
   },
   {
     question: 'Is the community genuinely private?',
@@ -25,14 +25,29 @@ const faqs = [
       'No. Serene Origins is built for people at any stage — whether you were diagnosed recently or have been navigating this for years. What matters is that you want more clarity, better support, and a more grounded way to move forward. Members at different stages bring different perspectives, and that\'s part of what makes the community valuable.',
   },
   {
-    question: 'How does payment work?',
+    question: 'How do I access the Discord after joining?',
     answer:
-      'Membership is billed monthly at $29 through Stripe, a secure and widely trusted payment platform. Your billing information is handled entirely by Stripe and is never stored by Serene Origins directly. The charge will appear discreetly on your statement.',
+      'After checkout, LaunchPass provides the steps to connect your Discord account and unlock the member-only community.',
   },
   {
-    question: 'Can I cancel my membership?',
+    question: 'Why does checkout go through LaunchPass?',
     answer:
-      'Yes. You can cancel at any time. There are no long-term commitments or cancellation fees. If you decide the membership isn\'t right for you, you can stop your subscription and your access will continue through the end of the billing period.',
+      'LaunchPass manages paid Discord access, including member verification, role assignment, and access removal when a membership is canceled or payment fails.',
+  },
+  {
+    question: 'Is Discord access included?',
+    answer:
+      'Yes. Active members receive access to the private Discord community connected to the Discipline Transformation System.',
+  },
+  {
+    question: 'How does LaunchPass manage Discord access?',
+    answer:
+      'Access to the private Discord community is managed through LaunchPass. After checkout, members receive access instructions and Discord permissions based on their active membership status.',
+  },
+  {
+    question: 'What happens if I cancel?',
+    answer:
+      'Your membership access is managed through LaunchPass. If the membership ends, Discord access may be removed automatically.',
   },
 ]
 
